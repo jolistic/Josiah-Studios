@@ -15,11 +15,15 @@ const About = () => {
     <Layout>
       <SEO title="About | Josiah" desc="Hi. I'm Josiah! Here's how to contact me." />
       <AnimatedBox style={pageAnimation} py={[6, 6, 6, 8]} px={[6, 6, 8, 6, 8, 13]}>
-        <h1>Hi. I'm LekoArts!</h1>
-        <p>You can visit my website or my other Gatsby projects:</p>
-        <p>
-          <a href="mailto:jtyxcreative@gmail.com">Email</a> - <a href="https://www.instagram.com/josiahtyx">Instagram</a>
-        </p>
+        <h1>Hi. I'm Josiah!</h1>
+        <iframe src="https://drive.google.com/file/d/1tspvykfLtDW9-Di31XAYjCd2RBzWfTXi/view?usp=sharing" width="400px" height="300px"  />
+        <p>Here's how to contact me:</p>
+        <li>
+          <a href="mailto:contact@josiahstudios.com">Email</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/josiahtyx">Instagram</a>
+        </li>
       </AnimatedBox>
     </Layout>
   )

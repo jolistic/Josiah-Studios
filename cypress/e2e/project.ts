@@ -5,21 +5,21 @@
 describe('project', () => {
   beforeEach(() => {
     cy.visit('/')
-    cy.findByLabelText(/view project "breakfast"/i)
+    cy.findByLabelText(/view project "food"/i)
       .click({ force: true })
       .waitForRouteChange()
   })
 
   it('should be linked from the index page', () => {
-    cy.assertRoute('/breakfast')
+    cy.assertRoute('/food')
   })
   it('should have a category, title, description', () => {
     cy.findByText(/photography/i)
-    cy.findAllByText(/Breakfast - The most important time of the day/i)
-    cy.findByText(/The first meal of the day./i)
+    cy.findAllByText(/Food/i)
+    cy.findByText(/Delicious food./i)
   })
   it('should have images', () => {
-    cy.findByAltText(/projects-breakfast-003/i)
+    cy.findByAltText(/food/i)
   })
   it('should have a contact button', () => {
     cy.findByText(/contact us/i)

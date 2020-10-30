@@ -27,14 +27,14 @@ describe('navigation', () => {
     cy.get('nav').within(() => {
       cy.findByText(/about/i).click({ force: true }).waitForRouteChange()
     })
-    cy.findByText(/You can visit my website or my other Gatsby projects:/i).assertRoute('/about')
+    cy.findByText(/Visit my website:/i).assertRoute('/about')
   })
   it('link to home works', () => {
     cy.get('nav').within(() => {
       cy.findByText(/about/i).click({ force: true }).waitForRouteChange()
     })
-    cy.findByText(/You can visit my website or my other Gatsby projects:/i).assertRoute('/about')
-    cy.findByLabelText(/LekoArts, Back to home/i)
+    cy.findByText(/Visit my website:/i).assertRoute('/about')
+    cy.findByLabelText(/Josiah Studios, Back to home/i)
       .click({ force: true })
       .waitForRouteChange()
       .assertRoute('/')
