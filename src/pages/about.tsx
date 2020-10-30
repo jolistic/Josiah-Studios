@@ -17,6 +17,7 @@ const About = () => {
       <AnimatedBox style={pageAnimation} py={[6, 6, 6, 8]} px={[6, 6, 8, 6, 8, 13]}>
         <h1>Hi. I'm Josiah!</h1>
         <iframe src="https://drive.google.com/file/d/1tspvykfLtDW9-Di31XAYjCd2RBzWfTXi/view?usp=sharing" width="400px" height="300px"  />
+        
         <p>Here's how to contact me:</p>
         <li>
           <a href="mailto:contact@josiahstudios.com">Email</a>
@@ -24,6 +25,22 @@ const About = () => {
         <li>
           <a href="https://www.instagram.com/josiahtyx">Instagram</a>
         </li>
+
+        <h2>Contact me!</h2>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Name: <input type="text" name="name" /></label>   
+          </p>
+          <p>
+            <label>Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
       </AnimatedBox>
     </Layout>
   )
